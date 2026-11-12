@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Khutupalong Health Care (Dental Unit) — dental care in Khutupalong Bazar, Ukhiya, Cox's Bazar.">
+  <title>Anower Sadek | Khutupalong Health Care (Dental Unit)</title>
+  <style>
+    :root { --blue:#1264b4; --dark:#12324d; --pale:#eef7ff; --white:#fff; }
+    * { box-sizing:border-box; }
+    html { scroll-behavior:smooth; }
+    body { margin:0; font-family:Arial, sans-serif; color:#243746; line-height:1.6; }
+    header { background:var(--white); position:sticky; top:0; z-index:10; box-shadow:0 2px 12px #12324d18; }
+    .nav { max-width:1100px; margin:auto; padding:14px 20px; display:flex; align-items:center; justify-content:space-between; gap:16px; }
+    .brand { color:var(--blue); font-size:1.15rem; font-weight:800; }
+    nav { display:flex; flex-wrap:wrap; gap:16px; }
+    nav a { color:var(--dark); text-decoration:none; font-weight:600; }
+    nav a:hover { color:var(--blue); }
+    .hero { background:linear-gradient(130deg,#eaf6ff,#f8fcff); padding:78px 20px; }
+    .wrap { max-width:1100px; margin:auto; }
+    .hero h1 { color:var(--dark); font-size:clamp(2rem,5vw,3.5rem); line-height:1.15; margin:0 0 16px; }
+    .hero p { max-width:650px; font-size:1.1rem; }
+    .btn { display:inline-block; background:var(--blue); color:white; text-decoration:none; padding:12px 20px; border-radius:8px; font-weight:700; margin:8px 8px 0 0; }
+    .btn.secondary { background:white; color:var(--blue); border:1px solid var(--blue); }
+    section { padding:58px 20px; }
+    h2 { color:var(--dark); font-size:2rem; margin:0 0 12px; }
+    .intro { max-width:720px; margin:0 0 28px; }
+    .grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:18px; }
+    .card { background:white; border:1px solid #e2edf6; border-radius:14px; padding:22px; box-shadow:0 5px 18px #12324d0a; }
+    .card h3 { color:var(--blue); margin-top:0; }
+    .soft { background:var(--pale); }
+    .contact-box { background:var(--dark); color:white; border-radius:16px; padding:28px; }
+    .contact-box h2 { color:white; }
+    .contact-box a { color:white; }
+    footer { text-align:center; padding:24px 16px; background:#0c263b; color:#dceaf5; }
+    .small { font-size:.92rem; opacity:.9; }
+    @media(max-width:650px) {
+      .nav { align-items:flex-start; flex-direction:column; }
+      nav { gap:10px 14px; }
+      .hero { padding:58px 20px; }
+    }
+  </style>
+</head>
+<body>
+<header>
+  <div class="nav">
+    <div class="brand">ANOWER SADEK</div>
+    <nav aria-label="Main navigation">
+      <a href="#home">Home</a><a href="#services">Services</a><a href="#about">About</a><a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="hero" id="home">
+    <div class="wrap">
+      <p><strong>KHUTUPALONG HEALTH CARE (DENTAL UNIT)</strong></p>
+      <h1>A healthier smile starts here.</h1>
+      <p>Welcome to Khutupalong Health Care (Dental Unit). Contact our team to ask about dental services and clinic information.</p>
+      <a class="btn" href="tel:01603602639">Call: 01603602639</a>
+      <a class="btn secondary" href="#services">Explore Services</a>
+    </div>
+  </section>
+
+  <section id="services">
+    <div class="wrap">
+      <h2>Our Dental Services</h2>
+      <p class="intro">Please contact the clinic to confirm which services are currently available and to arrange an appointment.</p>
+      <div class="grid">
+        <article class="card"><h3>Dental Check-up</h3><p>General assessment and advice about oral health.</p></article>
+        <article class="card"><h3>Tooth Cleaning</h3><p>Ask the clinic about professional cleaning and prevention services.</p></article>
+        <article class="card"><h3>Toothache Consultation</h3><p>Get in touch for information about an assessment for tooth pain.</p></article>
+        <article class="card"><h3>Oral Health Advice</h3><p>Guidance on daily brushing, flossing and maintaining healthy teeth.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="soft" id="about">
+    <div class="wrap">
+      <h2>About Our Clinic</h2>
+      <p class="intro">Khutupalong Health Care (Dental Unit) is listed here as a local dental-care contact point in Khutupalong Bazar, Ukhiya, Cox's Bazar. Please call ahead to confirm opening hours, available treatments and appointment arrangements.</p>
+      <div class="card">
+        <h3>Website by Anower Sadek</h3>
+        <p>A simple, mobile-friendly website designed to make clinic contact information easy to find.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="wrap">
+      <div class="contact-box">
+        <h2>Contact the Clinic</h2>
+        <p><strong>Clinic:</strong> Khutupalong Health Care (Dental Unit)</p>
+        <p><strong>Phone:</strong> <a href="tel:01603602639">01603602639</a></p>
+        <p><strong>Location:</strong> Khutupalong Bazar, Ukhiya, Cox's Bazar, Bangladesh</p>
+        <a class="btn" style="background:white;color:#12324d" href="tel:01603602639">Call Now</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div>© <span id="year"></span> Anower Sadek · Khutupalong Health Care (Dental Unit)</div>
+  <div class="small">Please call to confirm clinic hours and available services.</div>
+</footer>
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
